@@ -10,3 +10,4 @@ website for student organization: Enter
   - [ ] CRUD for making and editing models
   - [ ] authentification
   - [ ] E-mail notifications
+  - [ ] Single Page application
