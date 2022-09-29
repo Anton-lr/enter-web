@@ -11,3 +11,6 @@ website for student organization: Enter
   - [ ] authentification
   - [ ] E-mail notifications
   - [ ] Single Page application
+  - [ ] JAM stack?
+  - [ ] Content Management System?
+  - [ ] Minimize calls to database
