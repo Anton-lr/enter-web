@@ -15,4 +15,4 @@ jobs:
     - name: zbrox/zola-deploy-action
       uses: zbrox/zola-deploy-action@master
       env:
-        TOKEN: ${{ secrets.TOKEN }}
+        TOKEN: ${{ secrets.GITHUB_TOKEN  }}
