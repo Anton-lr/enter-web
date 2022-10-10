@@ -1,5 +1,8 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+
+name: Zola Deploy
+uses: zbrox/zola-deploy-action@0.12.2
+
 
 on:
   # Runs on pushes targeting the default branch
@@ -40,3 +43,19 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+
+on:
+  push:
+    branches:
+      - master
+name: Build and deploy on push
+jobs:
+  build:
+    name: zbrox/zola-deploy-action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: zbrox/zola-deploy-action
+      uses: zbrox/zola-deploy-action@master
+      env:
+        TOKEN: ${{ secrets.TOKEN }}
