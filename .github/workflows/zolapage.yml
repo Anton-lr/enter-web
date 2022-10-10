@@ -1,6 +1,5 @@
-- name: Zola Deploy
-  uses: zbrox/zola-deploy-action@0.12.2
-
+name: Zola Deploy
+uses: zbrox/zola-deploy-action@0.12.2
 
 on:
   push:
